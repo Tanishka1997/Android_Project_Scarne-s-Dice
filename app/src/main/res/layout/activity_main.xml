@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_height="match_parent"
+    tools:context="com.example.tanishka.scarnesdice.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tvStatus"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ff0500"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:text="Your turn Score:0"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/tvTurnScore"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tvUserOverallScore"
+        android:layout_height="wrap_content"
+        android:text="Your overall Score:0"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvComputerOverallScore"
+        android:text="Computer's overall Score:0"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        />
+    <ImageView
+        android:id="@+id/diceFace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+
+        android:layout_gravity="center"
+        android:src="@drawable/dice1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#bdbdbd"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
+       <Button
+           android:layout_width="wrap_content"
+           android:text="Hold"
+           android:layout_marginRight="7dp"
+           android:id="@+id/btHold"
+           android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/btRoll"
+            android:layout_marginRight="7dp"
+            android:text="Roll"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/btReset"
+            android:text="Reset"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
